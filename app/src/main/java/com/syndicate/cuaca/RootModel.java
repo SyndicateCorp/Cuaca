@@ -7,6 +7,8 @@ import java.util.List;
 public class RootModel {
     @SerializedName("list")
     private List<ListModel> listModelList;
+    @SerializedName("city")
+    private CityModel cityModel;
 
     public RootModel() {
     }
@@ -17,5 +19,13 @@ public class RootModel {
 
     public void setListModelList(List<ListModel> listModelList) {
         this.listModelList = listModelList;
+    }
+
+    public CityModel getCityModel() {
+        return cityModel;
+    }
+
+    public void setCityModel(CityModel cityModel) {
+        this.cityModel = cityModel;
     }
 }
